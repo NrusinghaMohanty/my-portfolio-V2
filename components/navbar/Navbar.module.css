@@ -8,12 +8,13 @@
     text-align: center;
     padding: 1rem;
 }
-.profile > img{
+.profilePicture{
     width:100%;
     border-radius: 50%;
 }
 .socialIcon {
-    margin-top: 0.7rem;
+    margin: 0.5rem;
+    font-size: 2rem;
 }
 
 .socialIcon > a > img:hover{

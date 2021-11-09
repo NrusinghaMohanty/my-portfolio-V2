@@ -1,25 +1,41 @@
 import React from 'react'
 import styles from "./Navbar.module.css"
 import Link from 'next/link'
-
+import Image from "next/image"
+import {FaTwitter,FaLinkedin} from "react-icons/fa"
 
 const Navbar = () => {
+    const myLoader = ({ src, width, quality }) => {
+        return `${src}?w=${width}&q=${quality || 75}`
+    }
     return (
         <div className={styles.nav}>
             <div className={styles.profile}>
-                <img src="https://pbs.twimg.com/profile_images/1360076219320946695/lm6V1E0S_400x400.jpg" alt="error not found" />
+                <Image loader={myLoader} src="https://res.cloudinary.com/djc1o48j7/image/upload/v1636464699/portfolio-image/profilePic_jdmx3x.jpg"  height={300} width={300} className={styles.profilePicture}/>
             </div>
             <div className={styles.socialIcon}>
-            <a href="https://twitter.com/Nrusingha__" target="_blank"><img src="https://img.icons8.com/color/48/000000/twitter--v2.png"/></a>
-            <a href="https://www.linkedin.com/in/nrusingha-mohanty/" target="_blank"><img src="https://img.icons8.com/color/48/000000/linkedin.png"/></a>
+                <Link href="https://twitter.com/Nrusingha__" passHref>
+                    <FaTwitter className={styles.socialIcon}/>
+                 </Link>
+                <Link href="https://www.linkedin.com/in/nrusingha-mohanty/" passHref>
+                    <FaLinkedin className={styles.socialIcon}/> 
+                </Link>
             </div>
             <div className={styles.sub}>
-                <Link href="/"><button className={styles.navLink}>Home</button></Link>
-                <a href="https://drive.google.com/file/d/1dXSxg8aJOnPuabo0bIWSNO_UTQVF1UyO/view?usp=sharing"  className={styles.navLink} target="_blank">My cv</a>
-                <Link href="/Projects"><button className={styles.navLink}>Projects</button></Link>
-                <a href="https://github.com/NrusinghaMohanty" className={styles.navlinkBtn} target="_blank"><button className={styles.navLink}>Github</button></a>
+                <Link href="/">
+                    <button className={styles.navLink}>Home</button>
+                </Link>
+                <Link href="https://drive.google.com/file/d/1dXSxg8aJOnPuabo0bIWSNO_UTQVF1UyO/view?usp=sharing" className={styles.navlinkbtn} passHref>
+                    <button className={styles.navLink}>My cv </button>
+                </Link>
+                <Link href="/Projects">
+                    <button className={styles.navLink}>Projects</button>
+                </Link>
+                <Link href="https://github.com/NrusinghaMohanty" className={styles.navlinkBtn} passHref>
+                    <button className={styles.navLink}>Github</button> 
+                </Link>
             </div>
-    </div>
+        </div>
     )
 }
 

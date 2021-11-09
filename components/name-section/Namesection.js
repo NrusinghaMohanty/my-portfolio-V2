@@ -5,7 +5,7 @@ const Namesection = () => {
         <>
         <div className={styles.nameContainer}>
             <h1>Nrusingha Mohanty</h1>
-            <h3>Hey 👋🏻 ! I'm a Web developer</h3>
+            <h3>{`Hey 👋🏻 ! I'm a Web developer`}</h3>
         </div>  
         </>
     )

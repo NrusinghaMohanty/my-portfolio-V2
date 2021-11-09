@@ -1,0 +1,43 @@
+.nav{
+    background-color: var(--secondaryColor) ;
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    left: 0;
+    border-right: 1px solid #444;
+    text-align: center;
+    padding: 1rem;
+}
+.profile > img{
+    width:100%;
+    border-radius: 50%;
+}
+.socialIcon {
+    margin-top: 0.7rem;
+}
+
+.socialIcon > a > img:hover{
+    background-color:var(--primaryColor);
+}
+
+.navLink{
+    display: block;
+    width:100%;
+    background-color: var(--primaryColor);
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 5px;
+    color:#fff;
+    font-size: 1.1rem;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+.navLink:hover{
+    cursor: pointer;
+    background-color: #333;
+
+}
+.navlinkBtn{
+    text-decoration: none;
+}

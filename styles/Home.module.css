@@ -1,0 +1,13 @@
+.darkmode{
+  --primaryColor:rgb(1, 22, 39);
+  --secondaryColor: rgba(0, 0, 0, 0.80);
+  --fontPColor:#fff;
+  --fontSColor:#ddd;
+}
+.lightmode{
+  --primaryColor:#CBD5E0;
+  --secondaryColor:#A0AEC0;
+  /* #CBD5E0 */
+  --fontPColor:#000;
+  --fontSColor:#333;
+}

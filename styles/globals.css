@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Source+Sans+Pro:wght@600&display=swap');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root{
+  --primaryColor:rgb(1, 22, 39);
+  --secondaryColor: rgba(0, 0, 0, 0.80);
+  --fontPColor:#fff;
+  --fontSColor:#ddd;
+}
+/* .lightmode{
+  --primaryColor:#CBD5E0;
+  --secondaryColor:#A0AEC0;
+  /* #CBD5E0 */
+  /* --fontPColor:#000;
+  --fontSColor:#333;
+} */ 
+body{
+  font-family: 'Merriweather', serif;
+  /* font-family: 'Source Sans Pro', sans-serif; */
+  background-color: var(--primaryColor);
+  color: var(--fontPColor);
+}

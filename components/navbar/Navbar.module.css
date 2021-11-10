@@ -16,9 +16,11 @@
     margin: 0.5rem;
     font-size: 2rem;
 }
-
 .socialIcon > a > img:hover{
     background-color:var(--primaryColor);
+}
+.socialIcon:hover{
+    cursor: pointer;
 }
 
 .navLink{

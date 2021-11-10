@@ -31,8 +31,8 @@ const Allprojects = () => {
                     </div>
                     <div className={styles.projectDetails}>
                         <p>Currently I am working on videolibrary. It is built using React, HTML and CSS</p>
-                        <button>Live Demo</button>
-                        <Link href="https://github.com/NrusinghaMohanty/Video-library" passHref><button>Source code</button></Link>
+                        <Link href="https://travel-tubee.netlify.app/" passHref><button>Live Demo</button></Link>
+                        <Link href="https://github.com/NrusinghaMohanty/shop-tube-frontend" passHref><button>Source code</button></Link>
                     </div>
                 </div>
                 <div className={styles.projectDiv}>

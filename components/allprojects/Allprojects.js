@@ -30,7 +30,7 @@ const Allprojects = () => {
                         <Image loader={myLoader} src="v1636447030/portfolio-image/video-library_qwpnlo.jpg" width={500} height={300} alt="error not found" />                                                
                     </div>
                     <div className={styles.projectDetails}>
-                        <p>Currently I am working on videolibrary. It is built using React, HTML and CSS</p>
+                        <p>A Video library built using React, HTML and CSS. Using this app you can see different travel vlogs.</p>
                         <Link href="https://travel-tubee.netlify.app/" passHref><button>Live Demo</button></Link>
                         <Link href="https://github.com/NrusinghaMohanty/shop-tube-frontend" passHref><button>Source code</button></Link>
                     </div>
